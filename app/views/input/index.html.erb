@@ -1,0 +1,87 @@
+<html>
+<head>
+  <title>Vaccine Inventory Management</title>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-inverse" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Zambia.svg/800px-Flag_of_Zambia.svg.png" alt="some_text" width="80" height="53"></a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li><a href="http://www.moh.gov.zm">MOH Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">NGO partners <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.unicef.org">UNICEF</a></li>
+            <li><a href="http://www.wfp.org">WFP</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">Sign In</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
+
+
+<form action="/input/create">
+    <form class="form form-horizontal">
+        <div class="form-group">
+          <div class="col-lg-3">
+            <label for="exampleInputDateofInput">Date of Input</label>
+            <input name="inputdate" type="text" class="form-control" id="exampleInputDateofInput" placeholder="Enter date of Input">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-lg-3">
+            <label for="exampleInputClinicLocation">Clinic location</label>
+            <input name="lname" type="text" class="form-control" id="exampleInputClinicLocation" placeholder="Enter clinic location">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-lg-3">
+            <label for="exampleInputVaccinetype">Vaccine type</label>
+            <input name="name" type="text" class="form-control" id="exampleInputVaccinetype" placeholder="Enter vaccine type">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-lg-3">
+            <label for="exampleInputQuantity">Quantity</label>
+            <input name="unit" type="text" class="form-control" id="exampleInputQuantity" placeholder="Enter vaccine type quantity">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-lg-3">
+            <button type="submit" class="btn btn-info btn-md">Submit</button>
+            or
+            <a href="/home/index">Cancel</a>
+          </div>
+        </div>
+      </form>
+</form>
