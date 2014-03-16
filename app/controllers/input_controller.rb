@@ -12,7 +12,10 @@ class InputController < ApplicationController
     input.name = params["name"]
     input.unit = params["unit"]
     input.inputdate = params["inputdate"]
-    input.save
-    redirect_to "/home/index", notice: "Inventory was added"
+    if input.save
+      redirect_to "/home/index", notice: "Inventory change was added"
+    else
+      redirect_to "/input/index", notice: "Error, invalid input"
+    end
   end
 end

@@ -19,40 +19,19 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
-      <li><a href="http://www.moh.gov.zm">MOH Home</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">NGO partners <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="http://www.unicef.org">UNICEF</a></li>
-            <li><a href="http://www.wfp.org">WFP</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-      </li>
+      <li><a href="https://www.facebook.com/mohzambia">MOH Home</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#">Sign In</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
-      </li>
+
     </ul>
   </div><!-- /.navbar-collapse -->
 </nav>
 
 <div class="page-header">
   <h1>
-    Inventory analyses
-    <small>Key statistics</small>
+    Vaccine count by province
+    <small>If charts do not display refresh page</small>
   </h1>
 </div>
 
@@ -83,6 +62,30 @@
           HepB3 vaccine count by location
         </h4>
         <%= column_chart Inventory.where(:name => "HepB3").group(:lname).sum(:unit), :height => "200px"%>
+  </div>
+  <div class="col-md-6">
+        <h4>
+          Hib3 vaccine count by location
+        </h4>
+        <%= column_chart Inventory.where(:name => "Hib3").group(:lname).sum(:unit), :height => "200px"%>
+  </div>
+  <div class="col-md-6">
+        <h4>
+          Polio3 vaccine count by location
+        </h4>
+        <%= column_chart Inventory.where(:name => "Polio3").group(:lname).sum(:unit), :height => "200px"%>
+  </div>
+  <div class="col-md-6">
+        <h4>
+          MCV1 vaccine count by location
+        </h4>
+        <%= column_chart Inventory.where(:name => "MCV1").group(:lname).sum(:unit), :height => "200px"%>
+  </div>
+  <div class="col-md-6">
+        <h4>
+          PAB vaccine count by location
+        </h4>
+        <%= column_chart Inventory.where(:name => "PAB").group(:lname).sum(:unit), :height => "200px"%>
   </div>
 
 </div>

@@ -19,61 +19,46 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
-      <li><a href="http://www.moh.gov.zm">MOH Home</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">NGO partners <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="http://www.unicef.org">UNICEF</a></li>
-            <li><a href="http://www.wfp.org">WFP</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-      </li>
+      <li><a href="https://www.facebook.com/mohzambia">MOH Home</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#">Sign In</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
-      </li>
+
     </ul>
   </div><!-- /.navbar-collapse -->
 </nav>
 
+
+<div class="page-header">
+  <h5>
+  Please input any changes to your inventory stock (addition or subtraction) relative to last week, NOT your absolute stock count
+  </h5>
+</div>
 
 <form action="/input/create">
     <form class="form form-horizontal">
         <div class="form-group">
           <div class="col-lg-3">
             <label for="exampleInputDateofInput">Date of Input</label>
-            <input name="inputdate" type="text" class="form-control" id="exampleInputDateofInput" placeholder="Enter date of Input">
+            <input name="inputdate" type="text" class="form-control" id="exampleInputDateofInput" placeholder="Enter date of Input (e.g. 20140515)">
           </div>
         </div>
         <div class="form-group">
           <div class="col-lg-3">
             <label for="exampleInputClinicLocation">Clinic location</label>
-            <input name="lname" type="text" class="form-control" id="exampleInputClinicLocation" placeholder="Enter clinic location">
+            <input name="lname" type="text" class="form-control" id="exampleInputClinicLocation" placeholder="Enter clinic location: your options are Lusaka, Ndola, Kitwe, Kabwe, Chingola, Mufulira, Livingstone, Luanshya">
           </div>
         </div>
         <div class="form-group">
           <div class="col-lg-3">
             <label for="exampleInputVaccinetype">Vaccine type</label>
-            <input name="name" type="text" class="form-control" id="exampleInputVaccinetype" placeholder="Enter vaccine type">
+            <input name="name" type="text" class="form-control" id="exampleInputVaccinetype" placeholder="Enter vaccine type; your options are BCG, DTP1, DTP3, HepB3, Hib3, Polio3, MCV1, PAB">
           </div>
         </div>
         <div class="form-group">
           <div class="col-lg-3">
-            <label for="exampleInputQuantity">Quantity</label>
-            <input name="unit" type="text" class="form-control" id="exampleInputQuantity" placeholder="Enter vaccine type quantity">
+            <label for="exampleInputQuantity">Quantity change</label>
+            <input name="unit" type="text" class="form-control" id="exampleInputQuantity" placeholder="Enter change in vaccine quantity (negative number if stock decreased)">
           </div>
         </div>
         <div class="form-group">

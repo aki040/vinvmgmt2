@@ -141,7 +141,7 @@ inventory_list = [ { :lname => 'Lusaka',
                 :unit => 400,
                 :inputdate => 20140313
               },
-              { :lname => 'Chingoa',
+              { :lname => 'Chingola',
                 :name => 'BCG',
                 :unit => 500,
                 :inputdate => 20140313
@@ -181,7 +181,7 @@ inventory_list = [ { :lname => 'Lusaka',
                 :unit => 4,
                 :inputdate => 20140313
               },
-              { :lname => 'Chingoa',
+              { :lname => 'Chingola',
                 :name => 'DTP1',
                 :unit => 5,
                 :inputdate => 20140313
@@ -200,7 +200,128 @@ inventory_list = [ { :lname => 'Lusaka',
                 :name => 'DTP1',
                 :unit => 8,
                 :inputdate => 20140313
-              } ]
+              },
+               { :lname => 'Chingola',
+                :name => 'DTP3',
+                :unit => 5,
+                :inputdate => 20140313
+              },
+              { :lname => 'Mufulira',
+                :name => 'DTP3',
+                :unit => 6,
+                :inputdate => 20140313
+              },
+              { :lname => 'Livingstone',
+                :name => 'DTP3',
+                :unit => 7,
+                :inputdate => 20140313
+              },
+              { :lname => 'Luanshya',
+                :name => 'DTP3',
+                :unit => 8,
+                :inputdate => 20140313
+              },
+               { :lname => 'Chingola',
+                :name => 'HepB3',
+                :unit => 5,
+                :inputdate => 20140313
+              },
+              { :lname => 'Mufulira',
+                :name => 'HepB3',
+                :unit => 6,
+                :inputdate => 20140313
+              },
+              { :lname => 'Livingstone',
+                :name => 'HepB3',
+                :unit => 7,
+                :inputdate => 20140313
+              },
+              { :lname => 'Luanshya',
+                :name => 'HepB3',
+                :unit => 8,
+                :inputdate => 20140313
+              },
+               { :lname => 'Chingola',
+                :name => 'Hib3',
+                :unit => 5,
+                :inputdate => 20140313
+              },
+              { :lname => 'Mufulira',
+                :name => 'Hib3',
+                :unit => 6,
+                :inputdate => 20140313
+              },
+              { :lname => 'Livingstone',
+                :name => 'Hib3',
+                :unit => 7,
+                :inputdate => 20140313
+              },
+              { :lname => 'Luanshya',
+                :name => 'Hib3',
+                :unit => 8,
+                :inputdate => 20140313
+              },
+               { :lname => 'Chingola',
+                :name => 'Polio3',
+                :unit => 5,
+                :inputdate => 20140313
+              },
+              { :lname => 'Mufulira',
+                :name => 'Polio3',
+                :unit => 6,
+                :inputdate => 20140313
+              },
+              { :lname => 'Livingstone',
+                :name => 'Polio3',
+                :unit => 7,
+                :inputdate => 20140313
+              },
+              { :lname => 'Luanshya',
+                :name => 'Polio3',
+                :unit => 8,
+                :inputdate => 20140313
+              },
+                { :lname => 'Chingola',
+                :name => 'MCV1',
+                :unit => 5,
+                :inputdate => 20140313
+              },
+              { :lname => 'Mufulira',
+                :name => 'MCV1',
+                :unit => 6,
+                :inputdate => 20140313
+              },
+              { :lname => 'Livingstone',
+                :name => 'MCV1',
+                :unit => 7,
+                :inputdate => 20140313
+              },
+              { :lname => 'Luanshya',
+                :name => 'MCV1',
+                :unit => 8,
+                :inputdate => 20140313
+              },
+                { :lname => 'Chingola',
+                :name => 'PAB',
+                :unit => 5,
+                :inputdate => 20140313
+              },
+              { :lname => 'Mufulira',
+                :name => 'PAB',
+                :unit => 6,
+                :inputdate => 20140313
+              },
+              { :lname => 'Livingstone',
+                :name => 'PAB',
+                :unit => 7,
+                :inputdate => 20140313
+              },
+              { :lname => 'Luanshya',
+                :name => 'PAB',
+                :unit => 8,
+                :inputdate => 20140313
+              }
+               ]
 
 inventory_list.each do |inventory_info|
   i = Inventory.new
